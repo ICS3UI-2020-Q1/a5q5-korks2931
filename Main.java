@@ -1,6 +1,7 @@
+import java.util.Scanner;
 /**
- *
- * @author 
+ *This program will print out a line of * that is the size of the entered number 
+ * @author Sevde
  */
 public class Main {
 
@@ -9,7 +10,18 @@ public class Main {
    * @param args the command line arguments
    */
   public static void main(String[] args) {
-    // TODO code application logic here
+    // create a Scanner for user input 
+    Scanner input = new Scanner(System.in);
+    // ask the user for a number between 
+    System.out.println("Please enter a number between 1 and 10");
+    int userNumber = input.nextInt();
+    for( int count = 1; count <= userNumber; count = count + 1){
+     
+      System.out.print("*");
+      
+      
+    }
+
     
   }
 }
